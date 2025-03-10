@@ -19,8 +19,7 @@ int main() {
         cin >> PIN;
 
         if (PIN == valid_PIN) {
-            cout << "PIN yang Anda masukkan benar." << endl;
-            cout << "Selamat, Anda berhasil login." << endl;
+            cout << "PIN yang Anda masukkan benar. Selamat, Anda berhasil login." << endl;
             break; 
         } else {
             kesempatan--;
@@ -28,8 +27,8 @@ int main() {
             if (kesempatan > 0) {
                 cout << "Anda masih memiliki " << kesempatan << " kesempatan." << endl;
             } else {
-                cout << "Anda telah mencoba 3 kali, silakan coba lagi." << endl;
-                return 0; 
+                cout << "Anda telah mencoba 3 kali, akun anda kami blokir." << endl;
+                return 0;
             }
         }
     }
@@ -46,7 +45,6 @@ int main() {
         cin >> ATM;
 
         if (ATM == 1) {
-            
             cout << "Masukkan jumlah saldo yang ingin disetor: ";
             cin >> setortunai;
             tabungan += setortunai; 
@@ -54,7 +52,6 @@ int main() {
         } else if (ATM == 2) {
             cout << "Saldo Anda: Rp " << tabungan << endl; 
         } else if (ATM == 3) {
-            
             cout << "Masukkan jumlah yang ingin ditarik: ";
             cin >> tariktunai;
             if (tariktunai > tabungan) {
