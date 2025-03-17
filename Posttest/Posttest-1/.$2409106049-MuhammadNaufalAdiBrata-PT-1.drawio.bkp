@@ -141,7 +141,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ASw7bRttJEU4_Ta-zq9W" name="ATM">
-    <mxGraphModel dx="2232" dy="2215" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1674" dy="1936" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -286,28 +286,34 @@
         <mxCell id="uaJTP1VEcZ52QIyONkUi-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="uaJTP1VEcZ52QIyONkUi-41" target="uaJTP1VEcZ52QIyONkUi-42" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="uaJTP1VEcZ52QIyONkUi-41" value="Menu == 4" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="1044.95" y="-645" width="100" height="100" as="geometry" />
+        <mxCell id="uaJTP1VEcZ52QIyONkUi-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="uaJTP1VEcZ52QIyONkUi-41" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1559.9499999999996" y="-594.8260869565215" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="RIcvcLQwicJh6aqe2Jr7-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="uaJTP1VEcZ52QIyONkUi-42" edge="1" target="S_3To9QEpq2f4Jt1HM_s-1">
+        <mxCell id="uaJTP1VEcZ52QIyONkUi-41" value="Menu == 4" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1319.95" y="-645" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="RIcvcLQwicJh6aqe2Jr7-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="uaJTP1VEcZ52QIyONkUi-42" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1370" y="-270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="uaJTP1VEcZ52QIyONkUi-42" value="&quot; Terima kasih sudah menggunakan&lt;div&gt;ATM ini. Semoga harimu&lt;/div&gt;&lt;div&gt;Menyenangkan. &quot;&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
-          <mxGeometry x="941.2" y="-520" width="307.5" height="85" as="geometry" />
+          <mxGeometry x="1216.2" y="-520" width="307.5" height="85" as="geometry" />
         </mxCell>
-        <mxCell id="uaJTP1VEcZ52QIyONkUi-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" target="uaJTP1VEcZ52QIyONkUi-3" edge="1" source="sRYdXicBzEJIhfhjmnT_-1">
+        <mxCell id="uaJTP1VEcZ52QIyONkUi-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="uaJTP1VEcZ52QIyONkUi-3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1859.9499999999996" y="-780" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1468" y="-590" />
-              <mxPoint x="1530" y="-590" />
-              <mxPoint x="1530" y="-760" />
+              <mxPoint x="1680" y="-760" />
               <mxPoint x="300" y="-760" />
             </Array>
             <mxPoint x="1679.95" y="-622" as="sourcePoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="sRYdXicBzEJIhfhjmnT_-1" value="&quot; Pilihan tidak dtiemukan.&lt;div&gt;Harap masukkan menu dengan benar. &quot;&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.15789473684210525;" parent="1" vertex="1">
+          <mxGeometry x="1530" y="-622" width="280" height="72" as="geometry" />
         </mxCell>
         <mxCell id="RIcvcLQwicJh6aqe2Jr7-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="RIcvcLQwicJh6aqe2Jr7-2" target="uaJTP1VEcZ52QIyONkUi-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -319,7 +325,7 @@
           <mxGeometry x="176.2" y="-1060" width="93" height="55" as="geometry" />
         </mxCell>
         <mxCell id="S_3To9QEpq2f4Jt1HM_s-1" value="End" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="1289" y="-180" width="100" height="60" as="geometry" />
+          <mxGeometry x="1320" y="-270" width="100" height="60" as="geometry" />
         </mxCell>
         <mxCell id="S_3To9QEpq2f4Jt1HM_s-2" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -329,14 +335,20 @@
         </mxCell>
         <mxCell id="S_3To9QEpq2f4Jt1HM_s-3" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1160" y="-450" as="sourcePoint" />
-            <mxPoint x="1260" y="-450" as="targetPoint" />
+            <mxPoint x="1430" y="-450" as="sourcePoint" />
+            <mxPoint x="1530" y="-450" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="S_3To9QEpq2f4Jt1HM_s-4" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1420" y="-570" as="sourcePoint" />
-            <mxPoint x="1500" y="-570" as="targetPoint" />
+            <mxPoint x="1750" y="-560" as="sourcePoint" />
+            <mxPoint x="1830" y="-560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S_3To9QEpq2f4Jt1HM_s-5" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1209" y="-180" as="sourcePoint" />
+            <mxPoint x="1259" y="-230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="S_3To9QEpq2f4Jt1HM_s-6" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
@@ -368,15 +380,6 @@
             <mxPoint x="269.2" y="-201.25" as="sourcePoint" />
             <mxPoint x="340" y="-200" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="lgrnBbn9TGesMKJ02CrY-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="uaJTP1VEcZ52QIyONkUi-41" target="sRYdXicBzEJIhfhjmnT_-1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1559.9499999999996" y="-594.8260869565215" as="targetPoint" />
-            <mxPoint x="1145" y="-595" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="sRYdXicBzEJIhfhjmnT_-1" value="&quot; Pilihan tidak dtiemukan.&lt;div&gt;Harap masukkan menu dengan benar. &quot;&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.15789473684210525;" parent="1" vertex="1">
-          <mxGeometry x="1210" y="-632" width="280" height="72" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
