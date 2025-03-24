@@ -85,7 +85,7 @@ int main() {
                     cout << "Masukkan NIM: ";
                     cin >> nim;
 
-                    
+
                     for (int i = 0; i < dataUser ; i++) {
                         if (daftarPengguna[i].nama == nama && daftarPengguna[i].nim == nim) {
                             cout << "Login berhasil! Peran Anda: " << daftarPengguna[i].peran << endl;
@@ -248,7 +248,7 @@ int main() {
                 if (!loginBerhasil) {
                     cout << "Anda telah mencapai batas maksimum percobaan login." << endl;
                 }
-                break;
+                return 0;
             }
             case 3: {
                 cout << "Keluar dari program." << endl;
