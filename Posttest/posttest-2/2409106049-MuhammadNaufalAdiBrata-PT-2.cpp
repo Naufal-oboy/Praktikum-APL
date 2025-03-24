@@ -1,25 +1,16 @@
 #include <iostream>
-#include <iomanip> // Untuk manipulasi tabel
+#include <iomanip> 
 #include <string>
 using namespace std;
 
 #define MAX_LAPANGAN 5
-
-// Struktur data untuk lapangan
-struct Lapangan {
-    string id;
-    string harga;
-    string lokasi;
-    string status;
-};
 
 int kesempatanLogin = 3;
 string userLogin[2];
 int jumlahLapangan = 0;
 int pilihanMenu;
 
-// Array of struct untuk menyimpan data lapangan
-Lapangan dataLapangan[MAX_LAPANGAN];
+string dataLapangan[MAX_LAPANGAN][4]; 
 
 int main() {
     while (kesempatanLogin > 0) {
@@ -43,8 +34,8 @@ int main() {
     }
 
     do {
-        cout << "\n============================" << endl;
-        cout << "\nMenu Program Lapangan Futsal" << endl;
+        cout << "============================" << endl;
+        cout << "Menu Program Lapangan Futsal" << endl;
         cout << "1. Tambah lapangan" << endl;
         cout << "2. Lihat lapangan" << endl;
         cout << "3. Ubah lapangan" << endl;
@@ -63,7 +54,7 @@ int main() {
 
                     bool idUsed = false; 
                     for (int i = 0; i < jumlahLapangan; i++) {
-                        if (dataLapangan[i].id == idLapangan) {
+                        if (dataLapangan[i][0] == idLapangan) {
                             idUsed = true; 
                             break;
                         }
@@ -72,13 +63,13 @@ int main() {
                     if (idUsed) {
                         cout << "ID lapangan sudah digunakan! Silakan masukkan ID yang berbeda." << endl;
                     } else {
-                        dataLapangan[jumlahLapangan].id = idLapangan; 
+                        dataLapangan[jumlahLapangan][0] = idLapangan; 
                         cout << "Masukkan harga sewa lapangan : ";
-                        cin >> dataLapangan[jumlahLapangan].harga; 
+                        cin >> dataLapangan[jumlahLapangan][1]; 
                         cout << "Masukkan lokasi lapangan : ";
-                        cin >> dataLapangan[jumlahLapangan].lokasi; 
+                        cin >> dataLapangan[jumlahLapangan][2]; 
                         cout << "Masukkan status ketersediaan lapangan: ";
-                        cin >> dataLapangan[jumlahLapangan].status; 
+                        cin >> dataLapangan[jumlahLapangan][3]; 
                         cout << "Tambah Lapangan Berhasil !!" << endl;
                         jumlahLapangan++;
                     }
@@ -87,12 +78,12 @@ int main() {
                 }
                 break;
 
-            case 2:
+            case 2: 
                 if (jumlahLapangan == 0) {
                     cout << "Lapangan masih kosong!" << endl;
                 } else {
                     cout << "\n=== DAFTAR LAPANGAN FUTSAL ===" << endl;
-
+                    
                     cout << "+" << setfill('-') << setw(13) << "+" << setw(13) << "+" << setw(15) << "+" << setw(13) << "+" << endl;
                     cout << "| " << setfill(' ') << left << setw(11) << "ID Lapangan" << "| "
                         << setw(11) << "Harga Sewa" << "| "
@@ -101,10 +92,10 @@ int main() {
                     cout << "+" << setfill('-') << setw(13) << "+" << setw(13) << "+" << setw(15) << "+" << setw(13) << "+" << endl;
                     
                     for (int i = 0; i < jumlahLapangan; i++) {
-                        cout << "| " << setfill(' ') << left << setw(11) << dataLapangan[i].id << "| "
-                            << setw(11) << dataLapangan[i].harga << "| "
-                            << setw(13) << dataLapangan[i].lokasi << "| "
-                            << setw(11) << dataLapangan[i].status << "|" << endl;
+                        cout << "| " << setfill(' ') << left << setw(11) << dataLapangan[i][0] << "| "
+                            << setw(11) << dataLapangan[i][1] << "| "
+                            << setw(13) << dataLapangan[i][2] << "| "
+                            << setw(11) << dataLapangan[i][3] << "|" << endl;
                     }
                     
                     cout << "+" << setfill('-') << setw(13) << "+" << setw(13) << "+" << setw(15) << "+" << setw(13) << "+" << endl;
@@ -116,6 +107,7 @@ int main() {
                     cout << "Lapangan masih kosong!" << endl;
                 } else {
                     cout << "\n=== DAFTAR ID LAPANGAN ===" << endl;
+
                     cout << "+" << setfill('-') << setw(7) << "+" << setw(25) << "+" << endl;
                     cout << "| " << setfill(' ') << left << setw(5) << "No" << "| "
                         << setw(23) << "ID Lapangan" << "|" << endl;
@@ -123,7 +115,7 @@ int main() {
                     
                     for (int i = 0; i < jumlahLapangan; i++) {
                         cout << "| " << setfill(' ') << left << setw(5) << i + 1 << "| "
-                            << setw(23) << dataLapangan[i].id << "|" << endl;
+                            << setw(23) << dataLapangan[i][0] << "|" << endl;
                     }
                     
                     cout << "+" << setfill('-') << setw(7) << "+" << setw(25) << "+" << endl;
@@ -134,11 +126,11 @@ int main() {
                     
                     if (idLapanganUbah > 0 && idLapanganUbah <= jumlahLapangan) {
                         cout << "Masukkan harga sewa lapangan baru: ";
-                        cin >> dataLapangan[idLapanganUbah - 1].harga;
+                        cin >> dataLapangan[idLapanganUbah - 1][1];
                         cout << "Masukkan lokasi lapangan baru: ";
-                        cin >> dataLapangan[idLapanganUbah - 1].lokasi; 
+                        cin >> dataLapangan[idLapanganUbah - 1][2]; 
                         cout << "Masukkan status ketersediaan lapangan baru: ";
-                        cin >> dataLapangan[idLapanganUbah - 1].status; 
+                        cin >> dataLapangan[idLapanganUbah - 1][3]; 
                         cout << "Lapangan berhasil diubah!" << endl;
                     } else {
                         cout << "Nomor lapangan tidak valid!" << endl;
@@ -151,6 +143,7 @@ int main() {
                     cout << "Lapangan masih kosong!" << endl;
                 } else {
                     cout << "\n=== DAFTAR ID LAPANGAN ===" << endl;
+
                     cout << "+" << setfill('-') << setw(7) << "+" << setw(25) << "+" << endl;
                     cout << "| " << setfill(' ') << left << setw(5) << "No" << "| "
                         << setw(23) << "ID Lapangan" << "|" << endl;
@@ -158,7 +151,7 @@ int main() {
                     
                     for (int i = 0; i < jumlahLapangan; i++) {
                         cout << "| " << setfill(' ') << left << setw(5) << i + 1 << "| "
-                            << setw(23) << dataLapangan[i].id << "|" << endl;
+                            << setw(23) << dataLapangan[i][0] << "|" << endl;
                     }
                     
                     cout << "+" << setfill('-') << setw(7) << "+" << setw(25) << "+" << endl;
@@ -168,11 +161,12 @@ int main() {
                     cin >> idLapanganHapus;
 
                     if (idLapanganHapus > 0 && idLapanganHapus <= jumlahLapangan) {
+
                         for (int i = idLapanganHapus - 1; i < jumlahLapangan - 1; i++) {
-                            dataLapangan[i].id = dataLapangan[i + 1].id;
-                            dataLapangan[i].harga = dataLapangan[i + 1].harga;
-                            dataLapangan[i].lokasi = dataLapangan[i + 1].lokasi;
-                            dataLapangan[i].status = dataLapangan[i + 1].status;
+                            dataLapangan[i][0] = dataLapangan[i + 1][0];
+                            dataLapangan[i][1] = dataLapangan[i + 1][1];
+                            dataLapangan[i][2] = dataLapangan[i + 1][2];
+                            dataLapangan[i][3] = dataLapangan[i + 1][3];
                         }
                         jumlahLapangan--;
                         cout << "Lapangan berhasil dihapus!" << endl;
