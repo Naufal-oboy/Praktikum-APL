@@ -232,10 +232,11 @@ int main() {
                     } else {
                         kesempatanLogin--;
                         cout << "Login gagal! Kesempatan tersisa: " << kesempatanLogin << endl;
+                        if (kesempatanLogin == 0) {
+                            cout << "Anda telah mencapai batas maksimum percobaan login." << endl;
+                            return 0; 
+                        }
                     }
-                }
-                if (!loginBerhasil) {
-                    cout << "Anda telah mencapai batas maksimum percobaan login." << endl;
                 }
                 break;
             }
